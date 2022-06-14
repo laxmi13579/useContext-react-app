@@ -16,7 +16,7 @@ function Theme() {
   return (
     <>
         <button onClick={themeHandler}>toggle</button>
-        <div style={style}> Welcome!!</div>
+        <div style={style}> Welcome!</div>
     </>
   )
 }
