@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import { ThemeContext, ThemeUpdateContext } from './ThemeContext'
+import React from 'react'
+import {  useThemeContext, useThemeUpdateContext } from './ThemeContext'
 
 
 function Theme() {
-    const dark = useContext(ThemeContext);
-    const themeHandler = useContext(ThemeUpdateContext);
+    const dark = useThemeContext();
+    const themeHandler = useThemeUpdateContext();
 
     const style = {
         background: dark? '#F0F0ED' : 'black',
